@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Widgets {
-    public partial class ExampleRenderTime : System.Web.UI.Page {
+    public partial class ExampleRenderTime : BaseClass {
         protected void Page_Load(object sender, EventArgs e) {
 
         }

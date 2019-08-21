@@ -71,7 +71,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\Light\light.css" />
+    <Content Include="App_Themes\Dark\dark.css" />
+    <Content Include="App_Themes\Neon\neon.css" />
+    <Content Include="BaseClass.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -95,6 +100,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseClass.aspx.cs">
+      <DependentUpon>BaseClass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BaseClass.aspx.designer.cs">
+      <DependentUpon>BaseClass.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Counter.ascx.cs">
       <DependentUpon>Counter.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -170,6 +182,13 @@
     </Compile>
     <Compile Include="QuoteOfTheDayExample.aspx.designer.cs">
       <DependentUpon>QuoteOfTheDayExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
     </Compile>
     <Compile Include="WeatherExample.aspx.cs">
       <DependentUpon>WeatherExample.aspx</DependentUpon>

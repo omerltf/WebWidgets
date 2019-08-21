@@ -1,39 +1,30 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ExampleRenderTime.aspx.cs" Inherits="Widgets.ExampleRenderTime" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ExampleRenderTime.aspx.cs" Inherits="Widgets.ExampleRenderTime" %>
 
-<!DOCTYPE html>
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Render Time</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <h1>Widget Library</h1>
-            <h2>Render Time Control Documentation</h2>
-            <p>This control displays the time that the page was rendered at.</p>
-            <h3>Available Properties</h3>
-            <ul>
-                <li>`Label`: The text to display before the render time.</li>
-                <li>`Format`: The date format string to use for the render time.</li>
-            </ul>
+    <h1>Widget Library</h1>
+    <h2>Render Time Control Documentation</h2>
+    <p>This control displays the time that the page was rendered at.</p>
+    <h3>Available Properties</h3>
+    <ul>
+        <li>`Label`: The text to display before the render time.</li>
+        <li>`Format`: The date format string to use for the render time.</li>
+    </ul>
 
-            <h3>Examples</h3>
+    <h3>Examples</h3>
 
-            <pre><uc:RenderTime runat="server" /></pre>
+    <pre><uc:RenderTime runat="server" /></pre>
 
-            <div>
-            </div>
+    <div>
+    </div>
 
-            <pre><uc:RenderTime Message="This is a custom label: " Format="MM/dd/yy hh:mm tt" runat="server" /></pre>
+    <pre><uc:RenderTime Message="This is a custom label: " Format="MM/dd/yy hh:mm tt" runat="server" /></pre>
 
-            <div>
-            </div>
+    <div>
+    </div>
 
-            <p>
-                <a href="Default.aspx">Return to Home</a>
-            </p>
-        </div>
-    </form>
-</body>
-</html>
+    <p>
+        <a href="Default.aspx">Return to Home</a>
+    </p>
+
+</asp:Content>
