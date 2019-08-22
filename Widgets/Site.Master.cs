@@ -20,11 +20,14 @@ namespace Widgets {
             }
         }
         protected void Page_Load(object sender, EventArgs e) {
-
+            if (!IsPostBack) {
+                    ThemeDropDownList.SelectedValue = this.Theme;
+            }
         }
 
         protected void ThemeDropDownList_SelectedIndexChanged(object sender, EventArgs e) {
             this.Theme = ThemeDropDownList.SelectedValue;
+            ViewState["value"] = ThemeDropDownList.SelectedValue;
             Response.Redirect(Request.RawUrl);
         }
     }
